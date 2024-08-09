@@ -1,0 +1,130 @@
+# Python
+*.py[cod]
+*.pyo
+__pycache__/
+*.so
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+media/
+staticfiles/
+
+# Entorno virtual
+
+env/
+venv/
+ENV/
+VENV/
+
+# VS Code
+.vscode/
+
+# Archivos compilados / optimizados / DLL
+__pycache__/
+*.py[cod]
+*Spy.class
+
+# Extensiones C
+*.so
+
+# Distribución / empaquetado
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Registors de instalación
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Informes de pruebas unitarias / cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Traducciones
+*.mo
+*.pot
+
+# Cosas de Django:
+*.log
+local_settings.py
+db.sqlite3
+
+# Cosas de Flask:
+
+instance/
+.webassets-cache
+
+# Cosas de Scrapy:
+.scrapy
+
+# Docuemntación de Sphinx
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-versio
+
+# Archivo de programación de Celery
+celerybeat-scheadule
+
+# Archivos analizados de SageMath
+*.sage.py
+
+# Entornos
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.ba/
+
+# Configuraciones de proyectos de Spyder
+.spyderproject
+.spyproject
+
+# Configuraciones de proyectos de Rope
+.ropeproject
+
+# Documentación de mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Verificador de tipos Pyre
+.pyre/
