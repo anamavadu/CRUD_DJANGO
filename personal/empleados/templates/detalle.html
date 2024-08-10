@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ empleado.nombre }}{% endblock %}
+
+{% block header %}
+    <h2>{{ empleado.nombre }}</h2>
+{% endblock %}
+
+{% block content %}
+    <div>
+        {% if empleado.imagen %}
+        <img src="{{ empleado.imagen.url }}" alt="{{ empleado.nombre }}">
+        {% endif %}
+        <p>{{ empleado.descripcion }}</p>
+        <p>${{ empleado.salario }}</p>
+        <button>Asignar tarea</button>
+        <a href="{% url 'empleados' %}"><button>Volver</button></a>
+    </div>
+{% endblock %}
