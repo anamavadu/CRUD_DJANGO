@@ -7,13 +7,21 @@
 {% endblock %}
 
 {% block content %}
-    <div>
+<<section class="detalle-empleado">
+    <div class="contenedor-imagen">
+        <h2>{{ empleado.nombre }}</h2>
         {% if empleado.imagen %}
         <img src="{{ empleado.imagen.url }}" alt="{{ empleado.nombre }}">
         {% endif %}
-        <p>{{ empleado.descripcion }}</p>
-        <p>${{ empleado.salario }}</p>
-        <button>Asignar tarea</button>
-        <a href="{% url 'empleados' %}"><button>Volver</button></a>
+        <p class="salario">${{ empleado.salario }}</p>
+        <p class="ingreso">Fecha de Ingreso: {{ empleado.ingreso }}</p>
+        <div class="grupo-botones">
+            <button class="boton detalle-boton">Asignar tarea</button>
+            <a href="{% url 'empleados' %}" class="boton detalle-boton">Volver</a>
+        </div>
     </div>
+    <article class="info-empleado">
+        <p class="cargo">{{ empleado.cargo }}</p>
+    </article>
+</section>
 {% endblock %}

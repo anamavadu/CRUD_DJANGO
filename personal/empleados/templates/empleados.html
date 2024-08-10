@@ -7,17 +7,19 @@
 {% endblock %}
 
 {% block content %}
-    <div>
-        {% for empleado in empleados %}
-            <div>
-                {% if empleado.imagen %}
-                <img src="{{ empleado.imagen.url }}" alt="{{ empleado.nombre }}">
-                {% endif %}
-                <h2>{{ empleado.nombre }}</h2>
-                <p>{{ empleado.descripcion|truncatechars:100 }}...</p>
-                <p>${{ empleado.salario }}</p>
-                <button>Asignar tarea</button>
-                <a href="{% url 'detalle' empleado.id %}"><button>Detalles</button></a>
+<div class="lista-empleados">
+    {% for empleado in empleados %}
+        <div class="tarjeta-empleado">
+            {% if empleado.imagen %}
+            <img src="{{ empleado.imagen.url }}" alt="{{ empleado.nombre }}">
+            {% endif %}
+            <h2>{{ empleado.nombre }}</h2>
+            <p class="salario">${{ empleado.salario }}</p>
+            <p>{{ empleado.descripcion|truncatechars:100 }}...</p>
+            <div class="grupo-botones">
+                <button class="boton">Asignar tarea</button>
+                <a href="{% url 'detalle' empleado.id %}" class="boton">Detalles</a>
+            </div>
             </div>
         {% endfor %}
     </div>
