@@ -241,7 +241,7 @@ form .boton {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espacio entre los elementos de texto */
-    max-height: 450px; /* Altura máxima para la descripción */
+    max-height: 600px; /* Altura máxima para la descripción */
     overflow-y: auto; /* Scroll si hay mucho texto */
     padding-right: 20px; /* Espacio para el scroll */
     margin-top: 40px;
